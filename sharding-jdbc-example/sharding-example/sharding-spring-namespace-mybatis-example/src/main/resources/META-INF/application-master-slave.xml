@@ -16,23 +16,23 @@
     
     <bean id="demo_ds_master" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/demo_ds_master?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+        <property name="jdbcUrl" value="jdbc:mysql://10.101.25.141:3306/demo_ds_master?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
         <property name="username" value="root"/>
-        <property name="password" value=""/>
+        <property name="password" value="tang37"/>
     </bean>
     
     <bean id="demo_ds_slave_0" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/demo_ds_slave_0?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+        <property name="jdbcUrl" value="jdbc:mysql://10.101.25.141:3306/demo_ds_slave_0?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
         <property name="username" value="root"/>
-        <property name="password" value=""/>
+        <property name="password" value="tang37"/>
     </bean>
     
     <bean id="demo_ds_slave_1" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/demo_ds_slave_1?useSSL=false"/>
+        <property name="jdbcUrl" value="jdbc:mysql://10.101.25.141:3306/demo_ds_slave_1?useSSL=false"/>
         <property name="username" value="root"/>
-        <property name="password" value=""/>
+        <property name="password" value="tang37"/>
     </bean>
 
     <master-slave:load-balance-algorithm id="randomStrategy" type="RANDOM" />

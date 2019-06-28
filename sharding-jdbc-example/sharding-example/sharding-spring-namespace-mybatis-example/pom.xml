@@ -38,6 +38,12 @@
             <groupId>hikari-cp</groupId>
             <artifactId>hikari-cp</artifactId>
             <version>2.6.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>clojure</artifactId>
+                    <groupId>org.clojure</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
